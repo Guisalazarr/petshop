@@ -1,26 +1,26 @@
 
 // função para ir para home.
-function goToHome (){
+function goToIndex (){
     setTimeout(function() {
-        window.location.href = './home.html'
+        window.location.href = './index.html'
       },2000);
  }
 
  // função para limpar o localstorage
  function clearLocalStorage(){
     localStorage.clear();
-    alert('Serviço removido com sucesso')
+    createSuccess('Serviço removido com sucesso');
     setTimeout(function() {
         window.location.reload(true);
-      },300);
+      },2000);
     
 }
 
 // função para criar o alert de sucesso
-function createSuccess() {
+function createSuccess(msg) {
     feedBackToastEl.classList.remove("text-bg-danger");
     feedBackToastEl.classList.add("text-bg-success");
-    feedBackToastEl.innerHTML = "Serviço agendado com sucesso!"
+    feedBackToastEl.innerHTML = msg
     feedBackToast.show();
 }
 
@@ -65,8 +65,8 @@ getData()
     showDanger()
 
   }else{
-    createSuccess()
-    goToHome()
+    createSuccess('Serviço agendado com successo')
+    goToIndex()
   
     localStorage.clear()
   }  

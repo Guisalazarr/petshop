@@ -1,9 +1,9 @@
 const formRegister=  document.getElementById('formRegister')
 
-// Função para ir para página home
-function goToHome (){
+// Função para ir para página index
+function goToIndex (){
   setTimeout(function() {
-      window.location.href = './home.html'
+      window.location.href = './index.html'
     },2000);
 }
 
@@ -26,5 +26,5 @@ formRegister.addEventListener('submit', function (event){
 
 
    createSuccess()
-   goToHome()
+   goToIndex()
 })
