@@ -1,0 +1,101 @@
+header{
+    top: 0;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 50px;
+}
+
+.header_a:hover{
+    color: black;
+    font-style: italic;
+}
+
+body{
+    background-color: #eaeaea
+}
+
+.a_icon{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+a{  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+
+}
+h3{
+    margin-bottom: 50px;
+}
+
+input{
+    height: 50px;
+    width: 400px;
+    outline-color: none;
+}
+
+.form-control, .form-select{
+    border-width: 3px;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border: 3px solid #198754;
+}
+
+img{
+    width: 200px;
+    height: 150px;
+    border-radius: 5%;
+}
+
+.button_register{
+    height: 60px;
+    width: 400px;
+}
+
+.button_appointment{
+    height: 35px;
+    width: 200px;
+}
+
+hr{
+    border-top: 2px solid black;
+}
+
+.box_home{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10%;
+    margin-bottom: 80px;
+}
+
+.box_register{
+    width: 100%;
+    height: 350px
+}
+
+
+.box_pet{
+    width: 70%;
+    height: 350px
+}
+
+#feedback-toast, #feedback-toast-pet, #feedback-toast-register{
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    z-index: 9999;
+  }
+
+footer{
+    position: relative;
+    margin-top: 100px;
+    height: 100%;
+    bottom: 0;
+    background-color: #f8f8f8
+    
+}
